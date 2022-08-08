@@ -41,7 +41,14 @@
 	
 ### Static methods in Interface
 * Static method in interface is introduced so the we can call the method by just interface name. No need to create class and then its object.
-* Static method are not available to implementing class by default. Hence we can call these methods using interface name explicitly from implementing classes as implementing class wont have access to these method directly.
+* Static method are not available to implementing classby default. Hence we can call these methods using interface name explicitly from implementing classes as implementing class wont have access to these method directly.
+* Static method in interface cannot be overriden.
+* Similar to static methods these should be called through Interface name.
+	> InterfaceName.StaticMethodName;
+	
+### Need of static method in interface
+* Use of static method in interface is it helps us in providing security by not allowing implementation classes to override them.
+* Interface static methods are good for providing utility methods, for example null checking i.e whose definition will never change.
 
 ### Predicate
 
